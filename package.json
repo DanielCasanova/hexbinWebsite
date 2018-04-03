@@ -1,0 +1,26 @@
+{
+  "name": "hexbinWebsite",
+  "version": "0.0.3",
+  "description": "Website utilized by hexbin.net",
+  "main": "index.js",
+  "scripts": {
+    "installDeps": "npm run installBootstrap && npm run installFontAwesome",
+    "installBootstrap": "npm install bootstrap",
+    "installFontAwesome": "npm install font-awesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielCasanova/hexbinWebsite.git"
+  },
+  "keywords": [],
+  "author": "Daniel Casanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielCasanova/hexbinWebsite/issues"
+  },
+  "homepage": "https://github.com/DanielCasanova/hexbinWebsite#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0"
+  }
+}
