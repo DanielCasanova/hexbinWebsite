@@ -1,228 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HexBin - Free Teamspeak server</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/CustomSettings.css" rel="stylesheet">
-    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-  
-  <body>
-      <!-- NavBar -->
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">HexBin</a>
-              </div>
-              <div class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home </a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teamspeak <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="info.teamspeak.html">General Info </a></li>
-                                <li class="divider"></li>
-                                <li><a href="connect.teamspeak.html">How to connect </a></li>
-                                <li><a href="#">Ranking System </a></li>
-                                <li class="divider"></li>
-                                <li class="disabled"><a href="#">Guides of conduct </a></li>
-                            </ul>
-                        </li>
-                        <li><a href="miniSpeedTest.html">Mini Speed Test</a></li>
-                        <li><a href="#contact" data-toggle="modal">Contact</a></li>
-                        <li><a href="#about" data-toggle="modal">About</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      
-      <!-- Body -->
-      <div class="container">
-          <div class="panel panel-default">
-              <div class="panel-body">
-                Our Teamspeak uses a military style ranking of it's members. Currently we are using eight diferent ranks.
-              </div>
-          </div>
-          
-          <div class="panel panel-default">
-              <div class="panel-body">
-                The following six ranks are Server Groups.
-              </div>
-          </div>
-          
-          <!-- Captain -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Captain.png" alt="Captain" width="20" height="20"></z>
-                      Captain</h3>
-              </div>
-              <div class="panel-body">
-                  This rank has full control of the server.
-              </div>
-          </div>
-          
-          <!-- 1st Lieutenant -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_1st.png" alt="1st Lieutenant" width="20" height="20"></z>
-                      1st Lieutenant</h3>
-              </div>
-              <div class="panel-body">
-                  This rank can create, edit and delete channels as well as kick, move and ban lower ranked users.
-              </div>
-          </div>
-          
-          <!-- 2nd Lieutenant -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_2nd.png" alt="1st Lieutenant" width="20" height="20"></z>
-                      2nd Lieutenant</h3>
-              </div>
-              <div class="panel-body">
-                  This rank can create temporary channels as well as kick and move lower ranked users.
-              </div>
-          </div>
-          
-          <!-- Staff  Sergeant   -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Staff.png" alt="Staff  Sergeant " width="20" height="20"></z>
-                      Staff  Sergeant</h3>
-              </div>
-              <div class="panel-body">
-                  This rank allows for the broadcast of messages in the server channel as well as permissions to download and upload to the file browser. For the time being we are allowing this rank to create temporary channels.
-              </div>
-          </div>
-          
-          <!-- Private -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Private.png" alt="Private" width="20" height="20"></z>
-                      Private</h3>
-              </div>
-              <div class="panel-body">
-                  Default group for any newcomer, this rank can download from the file browser.
-              </div>
-          </div>
-          
-          <!-- Recruit -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Recruit.png" alt="Private" width="20" height="20"></z>
-                      Recruit</h3>
-              </div>
-              <div class="panel-body">
-                  Special demotion rank. This rank prohibits pokes and private chats with other users.
-              </div>
-          </div>
-          
-          <div class="panel panel-default">
-              <div class="panel-body">
-                The following three ranks are Channel Groups.
-              </div>
-          </div>
-          
-          <!-- Sergeant -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Sergeant.jpg" alt="Sergeant" width="20" height="20"></z>
-                      Sergeant</h3>
-              </div>
-              <div class="panel-body">
-                  This rank can create sub-channels within the channel as well as kick users from the channel and grant talk power.
-              </div>
-          </div>
-          
-          <!-- Corporal -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Corporal.jpg" alt="Corporal" width="20" height="20"></z>
-                      Corporal</h3>
-              </div>
-              <div class="panel-body">
-                  This rank can grant talk power.
-              </div>
-          </div>
-          
-          <!-- Private -->
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">
-                      <z><img src="images/teamspeak_Private.png" alt="Private" width="20" height="20"></z>
-                      Private</h3>
-              </div>
-              <div class="panel-body">
-                  Default channel rank, no special permission.
-              </div>
-          </div>
-      </div>
-      
-      <!-- Footer -->
-      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-          <div class="container">
-                <div class="navbar-text pull-left">
-                    <p>© 2015 HexBin.net</p>
-                </div>
-              <div class="navbar-text pull-right">
-                  <a href="http://steamcommunity.com/groups/hexbinnet" target="_blank"><i class="fa fa-steam-square fa-2x"></i></a>
-              </div>
-          </div>
-      </div>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      
-    <!-- JavaScript goes after this comment-->
-    
-    <div class="modal fade" id="contact" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4>Contact</h4>
+        <!-- Tags -->
+        <meta name="description" content="Free Teamspeak for you and your friends to use during your gaming session!">
+        <meta name="keywords" content="Teamspeak, Free">
+        <title>HexBin - Free Teamspeak server</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/CustomSettings.css" rel="stylesheet">
+    </head>
+  
+    <body>
+        <!-- NavBar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">HexBin</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    
+                        <!-- Home Button -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <!-- Teamspeak Dropdown Button -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Teamspeak
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="info.teamspeak.html">General Info</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="connect.teamspeak.html">How to connect</a>
+                                <a class="dropdown-item" href="ranks.teamspeak.html">Ranking System</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item disabled" href="#">Guides of conduct</a>
+                            </div>
+                        </li>
+                        
+                        <!-- Contact Button -->
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#contact">Contact</a>
+                        </li>
+
+                        <!-- About Button -->
+                        <li class="nav-item">
+                            <a class="nav-link"  data-toggle="modal" data-target="#about">About</a>
+                        </li>
+                    
+                    </ul>
                 </div>
+            </div>
+        </nav>
+      
+        <!-- Body -->
+        <div class="container">
+
+            <!-- Opening Note -->
+            <div class="card text-center text-white bg-dark mb-4" >
+                <div class="card-body">
+                    <p class="card-text">Our Teamspeak uses a military style ranking of it's members. Currently we are using eight diferent ranks.</p>
+                </div>
+            </div>
+
+            <!-- Note One -->
+            <div class="card text-center bg-light mb-4" >
+                <div class="card-body">
+                    <p class="card-text">The following six ranks are Server Groups.</p>
+                </div>
+            </div>
+          
+            <!-- Captain -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Captain.png" alt="Captain" width="20" height="20"></z>
+                        Captain
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This rank has full control of the server.</p>
+                </div>
+            </div>
+          
+            <!-- 1st Lieutenant -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_1st.png" alt="1st Lieutenant" width="20" height="20"></z>
+                        1st Lieutenant
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This rank can create, edit and delete channels as well as kick, move and ban lower ranked users.</p>
+                </div>
+            </div>
+          
+            <!-- 2nd Lieutenant -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_2nd.png" alt="2nd Lieutenant" width="20" height="20"></z>
+                        2nd Lieutenant
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This rank can create temporary channels as well as kick and move lower ranked users.</p>
+                </div>
+            </div>
+          
+            <!-- Staff  Sergeant   -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Staff.png" alt="Staff Sergeant" width="20" height="20"></z>
+                        Staff Sergeant
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This rank allows for the broadcast of messages in the server channel as well as permissions to download and upload to the file browser. For the time being we are allowing this rank to create temporary channels.</p>
+                </div>
+            </div>
+          
+            <!-- Private -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Private.png" alt="Private" width="20" height="20"></z>
+                        Private
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Default group for any newcomer, this rank can download from the file browser.</p>
+                </div>
+            </div>
+          
+            <!-- Recruit -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Recruit.png" alt="Recruit" width="20" height="20"></z>
+                        Recruit
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Special demotion rank. This rank prohibits pokes and private chats with other users.</p>
+                </div>
+            </div>
+
+            <!-- Note Two -->
+            <div class="card text-center bg-light mb-4" >
+                <div class="card-body">
+                    <p class="card-text">The following three ranks are Channel Groups.</p>
+                </div>
+            </div>
+          
+            <!-- Sergeant -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Sergeant.jpg" alt="Sergeant" width="20" height="20"></z>
+                        Sergeant
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This rank can create sub-channels within the channel as well as kick users from the channel and grant talk power.</p>
+                </div>
+            </div>
+          
+            <!-- Corporal -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Corporal.jpg" alt="Corporal" width="20" height="20"></z>
+                        Corporal
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This rank can grant talk power.</p>
+                </div>
+            </div>
+          
+            <!-- Private -->
+            <div class="card text-center mb-4">
+                <div class="card-header">
+                    <h4 class="panel-title">
+                        <z><img src="images/teamspeak_Private.png" alt="Private" width="20" height="20"></z>
+                        Private
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Default channel rank, no special permission.</p>
+                </div>
+            </div>
+
+        </div>
+      
+        <!-- Footer -->
+        <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-between">
+            <div class="container">
+                <div class="navbar-text">
+                    <p>© 2018 HexBin.net</p>
+                </div>
+                <div class="navbar-text">
+                    <a href="http://steamcommunity.com/groups/hexbinnet" target="_blank"><i class="fa fa-steam-square fa-2x"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal for Contact and About -->
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 <div class="modal-body">
                     <p>For the time being we do not wish to be contacted.</p>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-danger" data-dismiss="modal">Close</a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="modal fade" id="about" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4>About</h4>
-                </div>
+        
+        <!-- About Modal -->
+        <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutModalLabel">About</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 <div class="modal-body">
                     <p>Website developed with the use of Bootstrap and Font Awesome.</p>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-danger" data-dismiss="modal">Close</a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
